@@ -1,3 +1,13 @@
+/*  Blaine Smith	
+ *  August 20, 2020
+ *  Assignment 1.1
+ *  
+ *	1.	The Previous button will iterate through the data array moving to the previous array element each time the button is clicked and will then update the GUI with the newly selected data. 
+ *		 If the Previous button is selected while the array is currently positioned at the first element, your program should then move the last element and update the display with the newly selected data.
+ *	2.	The Next button will iterate through the data array moving to the next array element each time the button is clicked and will then update the GUI with the newly selected data. 
+ *		 If the Next button is selected while the array is currently positioned at the last element, your program should then move the first element and update the display with the newly selected data.
+ *	3.	When the Reset button is selected you should move to the first element in the array and update the display
+*/
 package assignment1_1;
 
 import javax.swing.*;
@@ -150,8 +160,6 @@ public class Assignment_02Source extends JFrame
 
 class DataClass
   {
-// To save space I declared all String objects on a single line
-
     String name;
     String address;
     String city;
@@ -166,8 +174,7 @@ class DataClass
         this.state = state;
         this.zipCode = zipCode;
       }
-// To save space I placed the methods on a single line
-    
+
     String getName(){return this.name;}
     String getAddress(){return this.address;}
     String getCity(){return this.city;}
